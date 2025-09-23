@@ -52,7 +52,12 @@ Use the Linux in your CSE4001 container. If you are using macOS, you may use the
 
 
 ```cpp
-// Add your code or answer here. You can also add screenshots showing your program's execution.  
+/* 
+ * When the variable is accessed and set before the call to fork(), the value is the same across the parent and
+ * children; this is because fork() will continue execution after the call but save everything that happened
+ * before it. When both the parent and child change the value of X (after the fork), the value of x is unique
+ * in each process.
+ */
 ```
 
 
